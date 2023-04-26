@@ -22,11 +22,11 @@ app.listen(3000, () => {
     },
     {
         selector: "head",
-        html: "<script src='https://mfeservices.onrender.com/polyfills.5f77ae0f37392226.js' defer></script>"
+        html: "<script src='https://mfeservices.onrender.com/polyfills.5f77ae0f37392226.js' type='module'  defer></script>"
     },
     {
         selector: "head",
-        html: "<script src='https://mfeservices.onrender.com/main.737a91333ae6f91c.js' defer></script>"
+        html: "<script src='https://mfeservices.onrender.com/main.737a91333ae6f91c.js' type='module'  defer></script>"
     },
     {
         selector: "head",
