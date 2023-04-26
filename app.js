@@ -22,6 +22,11 @@ app.get('/api/manifest', (req, res) => {
         }
     ];
 
+    // Set the appropriate headers to avoid CORS issues
+    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+
     // Send the JSON response
     res.json(response);
 });
